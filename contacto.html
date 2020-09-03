@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contáctanos</title>
+	<meta name="viewport" content="width=device-width , initial-scale=1" >
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="css/stylecactus.css">
+	<link rel="stylesheet" href="css/stylecontacto.css">
+	<script src="https://kit.fontawesome.com/036f49b8aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="title">
+				<h1>CACTUS LAND</h1>
+			</div>
+			<div>
+				<ul>
+					<li><a href="index.html">inicio</a></li>                  
+                    <li><a href="nosotros.html">nosotros</a></li>
+                    <li class="desplegable"><a href="servicios.html">servicios</a>
+                        <ul>
+                            <li><a href="servicios.html#wallpapers">Fondos de pantalla</a></li>
+                            <li><a href="servicios.html#macetas">Venta de macetas</a></li>
+                            <li><a href="#">Terrarios</a></li>
+                            <li><a href="#">Lámpara para interiores</a></li>
+                            <li><a href="#">Decoraciones</a></li>
+                        </ul>
+                    </li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<article class="contenido">
+		<section class="ubicacion">
+			<h3><i class="fas fa-2x fa-map-marked"></i> ¿Dónde nos encontramos?</h3>
+			<ul>
+				<li>6:00AM-10:30PM</li>
+				<li>Av. Díaz Vélez, C1414 CABA</li>
+			</ul>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9077099819538!2d-58.437822485052315!3d-34.60649516515142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca688994eb61%3A0xd055df0a7dafa86e!2sParque%20Centenario!5e0!3m2!1sen!2sar!4v1598574118273!5m2!1sen!2sar" width="auto" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</section>
+		<section class="formulario">
+			<h4>Formulario de Contacto</h4>
+			<form action="enviar.php" method="post">
+				<label for="nombre">
+					<p>Nombre</p>
+					<input type="text" name="nombre" placeholder="Matilda Jimenez" class="caja-1">
+				</label>
+				<label for="email">
+					<p>E-mail</p>
+					<input type="email" name="email" placeholder="matilda@email.com" class="caja-1" required>
+				</label>
+				<label for="telefono">
+					<p>Teléfono</p>
+					<input type="tel" name="telefono" placeholder="+54 911(12345678)" class="caja-1" required>
+				</label>
+				<label for="asunto">
+					<p>Asunto</p>
+					<input type="text" name="asunto" placeholder="Sugerencias" class="caja-1">
+				</label>
+				<textarea name="mensaje" id="" cols="30" rows="10" placeholder="Comentarios" class="caja-2"></textarea>
+				<button type="submit" class="correr">Enviar</button>
+			</form>
+		</section>
+		<section class="preguntas">
+			<h2>Preguntas frecuentes</h2>
+			<li><a href="#">¿Cómo me uno a la comunidad?</a></li>
+			<li><a href="#">¿Realizan reuniones de <em>cactu-lovers</em>?</a></li>
+		</section>
+	</article>
+	<footer>
+        <section>
+            <p> Lorem ipsum dolor sit amet consectetur adipiscing, elit mi facilisis augue magna, sapien blandit integer nisi cum. Aenean phasellus class cras parturient nostra torquent fermentum per, quisque inceptos quis semper lacinia ultricies ridiculus facilisi imperdiet, in enim litora arcu pretium sapien condimentum.</p>
+            <div>
+                    <a href="https://www.instagram.com/buenoscactus/?hl=en" target="_blank"> <i class="fab fa-2x fa-instagram"></i></a>
+                    <a href="#"> <i class="fab fa-2x fa-reddit"></i></a>
+                    <a href="#" class="facebook"><i class="fab fa-2x fa-facebook"></i></a>
+                    <a href="#" class="twitter"> <i class="fab fa-2x fa-twitter"></i></a>
+                    <a href="#" class="pinterest"><i class="fab fa-2x fa-pinterest"></i></a>
+                    <a href="#" class="google plus"><i class="fab fa-2x fa-google-plus-g"></i></a>
+                    <a href="#" class="vimeo"><i class="fab fa-2x fa-vimeo"></i></a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;500&family=Merienda+One&family=Montserrat+Subrayada:wght@700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Laila', serif;
+}
+/*
+https://lh3.googleusercontent.com/proxy/W9b4KLK3XU3Msz9pma72MDr-0KTlBEa2qseEpYAYhO0QZ0RXf_i9KAV8heFQ9vdgHpa5WyaZ1UX_mDTexjLJYFTjJaSDEvSFA1D42CzYBiWk7fL-obyYU_sTUbic8SIvkcH2_yh6Ifgr-58cvDtC4OI
+https://images.truffaut.com/media/catalog/product/cache/ecd051e9670bd57df35c8f0b122d8aea/c/a/cactus_banniere-2.jpg
+https://www.google.com/imgres?imgurl=https%3A%2F%2Faws.revistaad.es%2Fprod%2Fdesigns%2Fv1%2Fassets%2F640x640%2F145438.jpg&imgrefurl=https%3A%2F%2Fwww.revistaad.es%2Fdecoracion%2Farticulos%2Fcactus-de-interior-mas-bonitos-y-faciles-de-cuidar%2F21677&tbnid=PXBUXCooXBIeFM&vet=10CHcQMyiTAWoXChMImLr5zIi06wIVAAAAAB0AAAAAEAI..i&docid=SPqL_KrhNVZdsM&w=640&h=640&q=cactus&ved=0CHcQMyiTAWoXChMImLr5zIi06wIVAAAAAB0AAAAAEAI#h=640&imgdii=D943n7TIaGXl7M&vet=10CHcQMyiTAWoXChMImLr5zIi06wIVAAAAAB0AAAAAEAI..i&w=640
+*/
+header {
+    padding: 0;
+    margin: 0;
+    background-color: #8a761ca6;
+    background-image: url(https://i.pinimg.com/originals/8d/e2/84/8de284e5b302d42fd880b763608e1e22.jpg);
+    background-size: cover;
+    color: white;  
+}
+/* Barra de navegacion */
+header nav {
+    height: 60px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #ffffff1e;
+    display: flex;
+    justify-content: space-between;
+}
+nav div::firstchild{
+    width: 450px;
+}
+nav div{
+    width: 450px;
+}
+nav div h1 { 
+    box-sizing: border-box;
+    height: 100%;
+    margin: 3%;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-weight: bolder;
+    color:#023306;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav div ul {
+    display: flex; 
+    flex-direction: row; 
+    margin: auto; 
+    height: 100%;
+    align-items: center;
+}
+nav div ul li {
+    list-style: none;
+}
+nav div ul a {
+    padding: 10px;
+    font-variant: small-caps; 
+    font-weight: bold;
+    color: black; 
+    text-decoration: none;
+    transition: background-color 1s ease;
+    border-radius: 5px;
+}
+nav div ul a:hover {
+    background-color: #023306; 
+    color: white;
+    border-radius: 5px;
+}
+.desplegable {
+    position: relative;
+}
+.desplegable ul{
+    margin: 10px 0 0 0;
+    padding: 0;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background-color: #ff8400d5;
+    background-color: #023306d8; 
+    z-index: 2;
+    border-radius: 4px;
+}
+.desplegable:hover ul {
+    display: flex;
+}
+.desplegable ul li {
+    height: auto;
+    font-size: x-small;
+    text-transform: lowercase;
+    padding: 0;
+    text-align: center;
+    margin: 5px 0;
+}
+.desplegable ul li a {
+    display: inline;
+    margin: 0;
+    padding: auto;
+    text-align: center;
+    color: wheat;
+}
+.desplegable ul a:hover { 
+    background-color: rgba(0, 0, 0, 0);
+}
+header div {
+    margin-left: 0;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+header div section {
+    width: 40%;
+    height: 340px;
+}
+header div section p {
+    margin: 10%;
+    align-items: center;
+}
+header div h2 {
+    text-shadow: 2px 2px #023306; 
+    font-family: 'Merienda One', cursive;
+    font-size: 50px;
+    margin: 10%;
+    text-align: end;
+}
+/*seccion de tres*/
+.principal{
+    width: 100%;
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section a {
+    margin: auto;
+    font-weight: bold;
+    color: black; 
+    text-decoration: none;
+}
+section a h3 {
+    text-align: center;
+    margin: 0;
+}
+.unodetres{
+    border-radius: 15px 50px;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(255, 165, 106);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.dosdetres{
+    border-radius: 15px 50px;
+    width: 200px;
+    height: 150px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.tresdetres{
+    border-radius: 15px 50px;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(102, 50, 7);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+section section p {
+    margin: 0;
+}
+/*secundario*/
+.secundario {
+margin: 20px;
+}
+.secundario a h2 {
+    text-shadow: 2px 2px #023306;  
+    margin-left: 40px;
+    font-size: 30px;
+}
+/*#c07014;*/
+.secundario ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.secundario ul li {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.secundario ul li img {
+    border-radius: 80px;
+    width: 250px;
+}
+h4 {
+    margin-left: 20px;
+}
+
+/*-------------footer------------*/
+footer {
+    box-sizing: border-box;
+    margin: 0 ;
+    margin-bottom: 0;  
+    padding: 0;
+    background-color: rgb(161, 63, 18);
+}
+footer section {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer section p { 
+    width: 300px; 
+    color: white;
+    text-align: justify;
+    margin-left: 10px;
+}
+footer section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px 15px 0 0;
+    width: 270px;
+    height: 50px;
+}
+footer section div a {
+    height: 35px;
+    text-decoration: none;
+    color: black;
+    transition: color 1s ease;
+    background-color: rgba(0, 0, 0, 0);
+}
+footer section div a:hover {
+    color: white;
+    }
+
+    /* _______________________________________________________________________________________________________________*/
+
+@media all and (min-width : 600px) and (max-width: 1023px) {
+    body {
+        font-size: 13px;
+    }
+    /* Barra de navegacion */
+    header {
+        background-size: 150%;
+        background-position: center right;
+        background-repeat: no-repeat;
+    }
+    header nav {
+        height: 50px;
+    }
+    nav div ul a {
+        margin: 0;
+        line-height: 2.1;
+    }
+    nav div ul a:hover {
+        background-color: #023306; 
+        color: white;
+        border-radius: 5px;
+    }
+    /*Parrafo y titulo*/
+   
+    header div section {
+        height: 280px;
+    }
+    header div section p {
+        text-shadow: #023306 1px 1px;
+    }
+    header div h2 {
+        font-size: 40px;
+    }
+    .principal{
+        width: 100%;
+    }
+    .principal .unodetres{
+        width: 60%;
+        height: 100px;
+        margin: 10px 2%;
+        padding: 10px;
+    }
+    .dosdetres{
+        width: 60%;
+        height: 100px;
+        margin: 10px 2%;
+        padding: 10px;
+    }
+    .tresdetres{
+        width: 60%;
+        height: 100px;
+        margin: 10px 2%;
+        padding: 10px;
+    }
+    .secundario ul li img {
+        width: 200px;;
+    }
+    /*-------------footer------------*/
+ 
+    footer section div {
+        flex-wrap: wrap;
+    }
+
+} /* Fin de media de 600-1023*/
+
+/*_________________________________________________________________________________________________________________*/
+
+@media all and (max-width: 599px) {
+        body {
+            font-size: 12px;
+        }
+        header {
+            background-position: center right -100px;
+            background-size: cover;
+            background-repeat: repeat;
+            color: rgb(255, 255, 255); 
+        }
+        /* Barra de navegacion */
+        header nav {
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        nav div{
+            width: 100%;
+        }
+        nav div ul {
+            font-size: medium;
+            padding: 0;
+            display: flex; 
+            flex-direction: column; 
+            margin: auto; 
+            align-items: center;
+        }
+        nav div ul a {
+            margin: 0px;
+        }
+        nav div ul a:active {
+            background-color: #023306; 
+            color: white;
+            border-radius: 5px;
+        }
+        header div {
+            margin-left: 0;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        header div section {
+            width: 100%;
+            height: auto;
+        }
+        header div section p {
+            margin: 5%;
+            font-size: 14px;
+            text-align: justify;
+            text-shadow: 1px 1px #023306;
+        }
+        header div h2 {
+            font-size: 40px;
+            margin: 2%;
+        }
+        /*seccion de tres*/
+        .principal{
+            width: 100%;
+            height: auto;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .principal {
+            align-items: center;
+        }
+        .unodetres{
+            width: 60%;
+            height: 70px;
+            margin: 10px 2%;
+            padding: 10px;
+
+        }
+        .dosdetres{
+            width: 60%;
+            height: 70px;
+            margin: 10px 2%;
+            padding: 10px;
+        }
+        .tresdetres{
+            width: 60%;
+            height: 70px;
+            margin: 10px 2%;
+            padding: 10px;
+        }
+        .secundario ul li img {
+            width: 100px;
+        }
+        /*-------------footer------------*/
+        footer {
+            width: 100%;
+            margin-left: 0;
+        }
+        footer section {
+            margin: auto;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        footer section p { 
+            width: 100%; 
+            color: white;
+            margin: 0;
+            margin-top: 5px;
+        }
+        section .redes {
+            margin: 0;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+} /* Fin de media para anchos <=599px*/

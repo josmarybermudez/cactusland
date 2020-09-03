@@ -1,0 +1,117 @@
+body {
+	background-size: cover;
+	background-color:  rgba(4, 4, 4, 0.877);
+	padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Laila', serif;
+}
+.contenido {
+	width: 100%;
+	background-color: rgba(4,4,4,0.5);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+h2, h3 {color: yellow;}
+a{text-decoration: none;
+	color: white;}
+a:hover{color: yellow;}
+.ubicacion {
+	width: 30%;
+	margin: 15px;
+}
+.ubicacion ul {list-style-type: none;
+color: white;}
+.formulario{
+	width: 40%;
+	margin: 15px;
+	color:#999;
+}
+.formulario h4{
+	margin: 0px 20px;
+	color: white;
+}
+.formulario form {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.formulario label {
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+}
+label p {
+	font-size: small;
+	margin-bottom: 0;}
+.caja-1{
+	width: 150px;
+	height: 40px;
+	margin: 0px 20px 10px 0px;
+	font-size: 14px;
+}
+.caja-2{
+	width: 545px;
+	height: 100px;
+	margin: 0px 20px;
+	padding: 10px;
+	font-size: 14px;
+}
+.correr{
+	margin: 20px 20px;
+	padding: 10px;
+}
+.preguntas {
+	margin: 15px;
+	padding: 5px;
+}
+.preguntas h2 { margin: 0;}
+.preguntas a {
+	background-color: rgba(0, 0, 0, 0);
+	color: white;
+}
+.preguntas a:hover {
+	color: yellowgreen;
+}
+/*		NOSOTROS		*/
+.nosotros {
+	color: white;
+	padding: 5px;
+}
+
+/*      SERVICIOS       */
+.servicios {
+	color: white;
+}
+.servicios ul li {
+	list-style: none;
+	font-size: medium;
+	color: yellowgreen;
+}
+.servicios p {
+	font-size: small;
+}
+
+@media all and (max-width: 1023px) {
+	.contenido {
+		width: 100%;
+		background-color: rgba(4,4,4,0.5);
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.ubicacion{
+		width: 80%;
+	}
+	.formulario{
+		width: 80%;
+	}
+	.preguntas{
+		width: 80%;
+	}
+
+}
+
