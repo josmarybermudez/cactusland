@@ -381,9 +381,6 @@ footer section div a:hover {
             flex-direction: column;
             justify-content: space-evenly;
         }
-        .principal {
-            align-items: center;
-        }
         .unodetres{
             width: 60%;
             height: 70px;
