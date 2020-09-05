@@ -121,6 +121,9 @@ label p {
 	.preguntas{
 		width: 80%;
 	}
+	.servicios ul {
+		padding: 5px;
+	}
 
 }
 
