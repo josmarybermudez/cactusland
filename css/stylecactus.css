@@ -318,7 +318,8 @@ footer section div a:hover {
         body {
             font-size: 12px;
         }
-        header {            background-position: center right 0px;
+        header {           
+            background-position: center right 0px;
             background-size: cover;
             background-repeat: repeat;
             color: rgb(255, 255, 255); 
