@@ -318,8 +318,7 @@ footer section div a:hover {
         body {
             font-size: 12px;
         }
-        header {
-            background-position: center right -100px;
+        header {            background-position: center right 0px;
             background-size: cover;
             background-repeat: repeat;
             color: rgb(255, 255, 255); 
@@ -330,6 +329,7 @@ footer section div a:hover {
             width: 100%;
             display: flex;
             flex-direction: column;
+            padding-bottom: 10px;
         }
         nav div{
             width: 100%;
@@ -376,7 +376,8 @@ footer section div a:hover {
         .principal{
             width: 100%;
             height: auto;
-            margin: 20px;
+            align-items: center;
+            margin: 0;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -420,6 +421,11 @@ footer section div a:hover {
             margin: 0;
             margin-top: 5px;
         }
+        footer section div {
+            width: 100%;
+            margin-top: 0px;
+            height: auto;
+        }
         section .redes {
             margin: 0;
             margin-top: 10px;
@@ -427,3 +433,12 @@ footer section div a:hover {
         }
 
 } /* Fin de media para anchos <=599px*/
+
+@media all and (max-width: 320px){
+    video, audio {
+        width: 100%;
+    }
+    footer .redes i.fab {
+        margin: 0 5px
+    }
+}

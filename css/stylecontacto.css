@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
     font-family: 'Laila', serif;
 }
-.contenido {
+.contenidoContacto {
 	width: 100%;
 	background-color: rgba(4,4,4,0.5);
 	display: flex;
@@ -30,8 +30,9 @@ color: white;}
 	color:#999;
 }
 .formulario h4{
-	margin: 0px 20px;
-	color: white;
+	font-size: 20px;
+	margin: 0;
+	color:  rgb(56, 247, 56);
 }
 .formulario form {
 	display: flex;
@@ -39,29 +40,37 @@ color: white;}
 	flex-wrap: wrap;
 }
 .formulario label {
-	margin-left: 20px;
 	display: flex;
 	flex-direction: column;
+	font-family: Helvetica, sans-serif;
 }
 label p {
+	font-family: Helvetica, sans-serif;
 	font-size: small;
-	margin-bottom: 0;}
+	margin-bottom: 0;
+}
 .caja-1{
 	width: 150px;
 	height: 40px;
-	margin: 0px 20px 10px 0px;
+	margin: 5px 20px 10px 0px;
+	padding:5px 10px;
 	font-size: 14px;
+	font-family: Helvetica, sans-serif;
 }
 .caja-2{
 	width: 545px;
 	height: 100px;
-	margin: 0px 20px;
 	padding: 10px;
 	font-size: 14px;
+	font-family: Helvetica, sans-serif;
 }
-.correr{
-	margin: 20px 20px;
+.enviar{
+	margin: 10px;
 	padding: 10px;
+	background-color: rgb(56, 247, 56);
+	font-weight: 700;
+	border-radius: 20px 5px;
+	border-color: rgb(255, 255, 255);
 }
 .preguntas {
 	margin: 15px;
@@ -94,8 +103,8 @@ label p {
 	font-size: small;
 }
 
-@media all and (max-width: 1023px) {
-	.contenido {
+@media all and (max-width: 1023px) and (min-width:600px) {
+	.contenidoContacto {
 		width: 100%;
 		background-color: rgba(4,4,4,0.5);
 		display: flex;
@@ -115,3 +124,56 @@ label p {
 
 }
 
+@media all and (max-width: 599px) {
+		header {
+		background-position: center right -50px;
+		background-size: 150%;
+		}
+		.contenidoContacto {
+			box-sizing: border-box;
+			width: 100%;
+			padding: 1% 5%;
+			background-color: rgba(4,4,4,0.5);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		.ubicacion {
+			width: 100%;
+			margin: 0;
+		}
+		.ubicacion iframe {
+			width: 80%;
+		}
+		.formulario {
+			width: 80%;
+		}
+		.preguntas a:active {
+			color: yellowgreen;
+		}
+
+
+		/*             POR REVISAR              */
+		/*		NOSOTROS		*/
+		.nosotros {
+			color: white;
+			padding: 5px;
+		}
+		
+		/*      SERVICIOS       */
+		.servicios {
+			color: white;
+		}
+		.servicios ul li {
+			list-style: none;
+			font-size: medium;
+			color: yellowgreen;
+		}
+		.servicios p {
+			font-size: small;
+		}	
+
+		.redes{
+			width: 100%;
+		}
+}
