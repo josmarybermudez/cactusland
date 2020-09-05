@@ -74,7 +74,7 @@ nav div ul a:hover {
     position: relative;
 }
 .desplegable ul{
-    margin: 10px 0 0 0;
+    margin:  7px 0 0 0;
     padding: 0;
     position: absolute;
     display: none;
@@ -91,18 +91,18 @@ nav div ul a:hover {
 }
 .desplegable ul li {
     height: auto;
-    font-size: x-small;
-    text-transform: lowercase;
-    padding: 0;
-    text-align: center;
-    margin: 5px 0;
+    padding: 5px;
+    text-align: left;
+    margin: 0;
 }
 .desplegable ul li a {
-    display: inline;
+    font-size: xx-small;
+    display: inline-block;
     margin: 0;
-    padding: auto;
-    text-align: center;
+    padding: 0;
     color: wheat;
+    font-variant: small-caps;
+    text-align: center;
 }
 .desplegable ul a:hover { 
     background-color: rgba(0, 0, 0, 0);
@@ -342,13 +342,24 @@ footer section div a:hover {
             margin: auto; 
             align-items: center;
         }
-        nav div ul a {
-            margin: 0px;
+        nav div ul li {
+            height: 20px;
+            padding: 0px;
+            margin: 5px;
+        }
+        nav div ul li a{
+            padding: 5px;
+        }
+        nav div ul a:hover {
+            background-color: rgba(245, 222, 179, 0);
         }
         nav div ul a:active {
             background-color: #023306; 
             color: white;
             border-radius: 5px;
+        }
+        .desplegable:hover ul {
+            display: none;
         }
         header div {
             margin-left: 0;
