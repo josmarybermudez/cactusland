@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;500&family=Merienda+One&family=Montserrat+Subrayada:wght@700&display=swap');
-
-body {
+*{  
     padding: 0;
     margin: 0;
+}
+body {
     box-sizing: border-box;
     font-family: 'Laila', serif;
 }
@@ -45,6 +46,14 @@ nav div h1 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
+    animation: heading;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes heading {
+    0%{ transform: translateX(-400px); }
+    100%{ transform: translateX(0px); }
 }
 nav div ul {
     display: flex; 
