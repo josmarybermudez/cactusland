@@ -1,11 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;500&family=Merienda+One&family=Montserrat+Subrayada:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
 *{  
     padding: 0;
     margin: 0;
 }
 body {
     box-sizing: border-box;
-    font-family: 'Laila', serif;
+    font-family: 'Trirong', serif;
 }
 header {
     padding: 0;
@@ -126,6 +129,7 @@ header div section {
 header div section p {
     margin: 10%;
     align-items: center;
+    font-size: 18px;
 }
 header div h2 {
     text-shadow: 2px 2px #023306; 
@@ -187,11 +191,10 @@ section section p {
 margin: 20px;
 }
 .secundario a h2 {
-    text-shadow: 2px 2px #023306;  
+    text-shadow: 1px 1px #1b5e21;  
     margin-left: 40px;
     font-size: 30px;
 }
-/*#c07014;*/
 .secundario ul {
     display: flex;
     flex-direction: row;
@@ -212,41 +215,39 @@ h4 {
 video { width: auto;}
 /*-------------footer------------*/
 footer {
+    height: 200px;
     box-sizing: border-box;
-    margin: 0 ;
-    margin-bottom: 0;  
-    padding: 0;
-    background-color: rgb(161, 63, 18);
-}
-footer section {
     margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(161, 63, 18);
+    color: rgb(255, 255, 255);
 }
-footer section p { 
-    width: 300px; 
-    color: white;
-    text-align: justify;
-    margin-left: 10px;
-}
-footer section div {
+.footerSection {
+    margin: 0 0 0 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 10px 15px 0 0;
-    width: 270px;
-    height: 50px;
 }
-footer section div a {
+.footerInfo {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+.footerInfo>ul {
+    list-style-type: none;
+}
+.footerInfo li:hover {
+    color: rgb(218, 218, 218);
+}
+.redes>a {
     height: 35px;
     text-decoration: none;
     color: black;
-    transition: color 1s ease;
-    background-color: rgba(0, 0, 0, 0);
+    transition: color 0.5s ease;
+    color: rgba(255, 255, 255, 0.65);
 }
-footer section div a:hover {
-    color: white;
+.redes>a:hover {
+    color: rgb(0, 0, 0);
     }
 
     /* _______________________________________________________________________________________________________________*/
@@ -441,7 +442,7 @@ footer section div a:hover {
             margin-top: 0px;
             height: auto;
         }
-        section .redes {
+        .redes {
             margin: 0;
             margin-top: 10px;
             width: 100%;
@@ -453,7 +454,7 @@ footer section div a:hover {
     video, audio {
         width: 100%;
     }
-    footer .redes i.fab {
+    .redes i.fab {
         margin: 0 5px
     }
 }
