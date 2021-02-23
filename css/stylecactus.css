@@ -54,6 +54,7 @@ nav div h1 {
     100%{ transform: translateX(0px); }
 }
 nav div ul {
+    font-size: 20px;
     display: flex; 
     flex-direction: row; 
     margin: auto; 
@@ -103,12 +104,12 @@ nav div ul a:hover {
     margin: 0;
 }
 .desplegable ul li a {
-    font-size: xx-small;
+    font-size: small;
     display: inline-block;
     margin: 0;
     padding: 0;
     color: wheat;
-    font-variant: small-caps;
+    font-variant: normal;
     text-align: center;
 }
 .desplegable ul a:hover { 
@@ -238,6 +239,7 @@ footer {
 }
 .footerInfo li:hover {
     color: rgb(218, 218, 218);
+    cursor: pointer;
 }
 .redes>a {
     height: 35px;
